@@ -1,0 +1,211 @@
+// resposvie variable
+$xl: 1440px;
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$xs: 575px;
+body {
+  overflow-x: hidden;
+  background: #dfe4ea;
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .jusstify {
+    justify-content: space-between;
+  }
+
+  .p-20 {
+    padding: 20px;
+  }
+
+  .border-transparent {
+    border-right: 2px solid transparent !important;
+  }
+}
+
+.block-elements {
+  // padding: 0 30px;
+  text-align: left;
+
+  .block-elements-content {
+    border-radius: 5px;
+    background: #fff;
+    -webkit-box-shadow: 4px 5px 0px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 4px 5px 0px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 4px 5px 0px 1px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+    .drag-drop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      border-right: 2px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+  .block-elements-content-layout {
+    &:last-child {
+      border-right: 1px solid transparent;
+    }
+
+    width: 33.33%;
+    border-right: 2px solid #ddd;
+
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      border-right: 2px solid transparent;
+    }
+
+    .form-group {
+      padding: 10px;
+
+      @media screen and (max-width: $sm) {
+        padding: 0 10px 10px 10px;
+      }
+    }
+  }
+}
+
+.image-wrapper-cta {
+  margin-top: 20px;
+
+  .uploadfile {
+    position: relative;
+
+    span {
+      padding: 10px;
+      background: #57606f;
+      color: #ffff;
+      font-size: 12px;
+      border-radius: 5px;
+      letter-spacing: 0.5px;
+      display: inline-block;
+
+      svg {
+        margin-left: 5px;
+      }
+    }
+
+    input {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+}
+
+.block-elements-content-heading {
+  @extend .flex;
+  @extend .jusstify;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      background: #f1f2f6;
+      margin-right: 10px;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 12px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.cutome-radio {
+  & > div {
+    width: 100%;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.image-wrapper-cta {
+  margin-top: 20px;
+  .uploadfile {
+    position: relative;
+    span {
+      padding: 10px;
+      background: #57606f;
+      color: #ffff;
+      font-size: 12px;
+      border-radius: 5px;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      svg {
+        margin-left: 5px;
+      }
+    }
+    input {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+}
+
+.block-elements-content-input {
+
+  & > div {
+    width: 100%;
+    .react-datepicker__input-container {
+      input {
+        height: 50px;
+        border: 1px solid #ddd;
+      }
+    }
+    input {
+      height: 6px;
+      width: 93%;
+    }
+
+    fieldset {
+      width: 93%;
+    }
+
+    textarea {
+      width: 93%;
+    }
+  }
+}

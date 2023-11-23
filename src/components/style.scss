@@ -1,0 +1,92 @@
+// resposvie variable
+$xl: 1440px;
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$xs: 575px;
+
+body {
+  overflow-x: hidden;
+  background: #dfe4ea;
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .jusstify {
+    justify-content: space-between;
+  }
+
+  .p-20 {
+    padding: 20px;
+  }
+
+  .border-transparent {
+    border-right: 2px solid transparent !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: none;
+}
+
+.site-content {
+  padding: 24px;
+
+  .custome-center {
+    @media screen and (max-width: $md) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .image-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 1px 4px 17px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 4px 17px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 17px 5px rgba(0, 0, 0, 0.1);
+    min-height: 270px;
+    margin-right: 25px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.add-button {
+  Button {
+    height: max-content;
+    background: #57606f;
+    color: #ffffff !important;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-left: 7px;
+    svg {
+      padding-top: 2px;
+    }
+  }
+}
+
+.add-button {
+  Button:hover {
+    height: max-content;
+    background: #000000;
+    color: #fffefe !important;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-left: 7px;
+    svg {
+      padding-top: 2px;
+    }
+  }
+}
